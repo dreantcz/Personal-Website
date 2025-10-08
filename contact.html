@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Drew Antczak</title>
+<link rel="stylesheet" href="styles.css">
+<script src="scripts/validate_form.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<div class="container header-content">
+<h1 class="logo">Drew Antczak</h1>
+<nav class="navbar">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<section class="contact-section">
+<h2>Get in Touch</h2>
+<p>Feel free to contact me at <a href="mailto:dreantcz@iu.com">dreantcz@iu.com</a></p>
+<p>If you’d like to collaborate or learn more, fill out the form below:</p>
+<form id="contactForm" action="thankyou.html" method="GET">
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="fname" required>
+
+
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lname" required>
+
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required>
+
+
+<label for="password">Password</label>
+<input type="password" id="password" name="password" minlength="8" required>
+
+
+<label for="confirm">Confirm Password</label>
+<input type="password" id="confirm" name="confirm" minlength="8" required>
+
+
+<button type="submit" class="btn">Submit</button>
+</form>
+</section>
+</main>
+
+
+<footer>
+<p>&copy; 2025 Drew Antczak</p>
+</footer>
+</body>
+</html>

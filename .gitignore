@@ -1,0 +1,23 @@
+﻿# Python venv
+.venv/
+venv/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Logs and env
+*.log
+.env
+
+# macOS
+.DS_Store
