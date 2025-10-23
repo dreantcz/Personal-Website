@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Add Project | Drew Antczak{% endblock %}
+{% block content %}
+<h2>Add a Project</h2>
+{% if error %}
+  <div class="error">{{ error }}</div>
+{% endif %}
+<form action="" method="POST" class="project-form">
+  <label for="title">Title</label>
+  <input type="text" id="title" name="title" required>
+
+  <label for="description">Description</label>
+  <textarea id="description" name="description" rows="4" required></textarea>
+
+  <label for="image">Image file name (place image in static/images)</label>
+  <input type="text" id="image" name="image" placeholder="example.png" required>
+
+  <button type="submit" class="btn">Add Project</button>
+</form>
+{% endblock %}

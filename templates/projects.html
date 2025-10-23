@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Projects | Drew Antczak{% endblock %}
+{% block content %}
+<h2>Featured Projects</h2>
+<table class="projects-table">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for p in projects %}
+    <tr>
+      <td>
+        <img src="/static/images/{{ p.imagefile }}" alt="{{ p.title }}" class="project-thumb">
+      </td>
+      <td>{{ p.title }}</td>
+      <td>{{ p.description }}</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="3">No projects yet.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p><a href="/subfolder/contact" class="btn">Add a Project</a></p>
+{% endblock %}

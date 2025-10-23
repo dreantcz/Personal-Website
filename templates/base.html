@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Drew Antczak{% endblock %}</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-content">
+    <h1 class="logo">Drew Antczak</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/subfolder/about">About</a></li>
+        <li><a href="/subfolder/resume">Resume</a></li>
+        <li><a href="/subfolder/projects" class="active">Projects</a></li>
+        <li><a href="/subfolder/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  {% block content %}{% endblock %}
+</main>
+
+<footer>
+  <p>&copy; 2025 Drew Antczak</p>
+</footer>
+</body>
+</html>
